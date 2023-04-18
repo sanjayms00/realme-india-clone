@@ -1,42 +1,70 @@
-nav {
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  :root
+  {
+    --ash : #666;
+    --yellow : #ffc915;
+  }
+  a{
+    color: var(--ash) !important;
+    font-size: 12px;
+    text-decoration: none !important;
+  }
+  a:hover
+  {
+    color: var(--yellow) !important;
+  }
+  span
+  {
+    padding: 0px 15px;
+    font-size: 12px;
+  }
+  .cont-extra-padd{
+    padding: 0 65px !important;
+  }
+  .top-header
+  {
+    padding-bottom: 1rem;
+  }
+  .log-order-cart{
+    float: right;
+  }
+  nav {
     text-align:center;
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 60px;
+    height: 40px;
     position:relative;
+    z-index: 1;
   }
-  
-  nav ul {
-    
+  ul{
     list-style:none;
-    padding:0 20px;
-    margin: 0;
-    height: 60px;
-  
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  
-  
-  nav ul li {
+  ul li {
     display: inline-block;
-  }
-  
-  
+   
+  }  
   nav ul li a {
     color:#333333;
     display:block;
-    padding:0px 40px;
-    text-decoration:none;
-    float: left;
-    height: 60px;
-    line-height: 60px;
+    padding:0px 20px;
+    font-size: 13px;
+    color: black !important;
+    height: 40px;
+    font-weight: 500;
   }
-  
   nav ul li:hover {
     color: #333333;
   }
-  
-  
   nav ul li:hover > a{
       color:#d9ff00;
   }
@@ -44,7 +72,6 @@ nav {
   nav ul li:hover > ul {
     display:block;
   }
-  
   nav ul ul {
     padding:0;
     text-align: center;
@@ -54,4 +81,118 @@ nav {
     top: 60px;
     left: 0px;
   }
+  .search img{
+    float: right;
+  }
   
+  /* head ends */
+
+
+#carouselExampleCaptions button:hover{
+  background-color: hsl(0, 0%, 0%, 0.5) !important;
+}
+.carousel-item{
+  height: 650px !important;
+  background-color: black;
+  overflow: hidden;
+}
+.carousel-item img{
+  height: 100%;
+  width: auto;
+  position: relative;
+  left: -25%;
+  
+}
+.carousel-indicators button{
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  margin: 0 10px !important;
+}
+
+/* carousal ends */
+
+.hover-up{
+  position: relative;
+}
+.hover-up:hover{
+  top: -2px;
+  transition: all .3s;
+  
+}
+.mobile-full-add img{
+  border-radius: 20px;
+}
+
+
+/* mobile add ends */
+
+.card{
+  border: none !important;
+  padding: 25px;
+}
+.first-big{
+  width: 500px;
+}
+
+/* hottest phones ends */
+
+
+
+
+footer h6{
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer ul{
+  padding: 10px 0 30px 0 !important;
+}
+
+.footer li{
+  display: block;
+  
+}
+footer a{
+  color: black !important;
+}
+.chat-support{
+  text-align: center;
+}
+.chat-support span{
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.chat-support button{
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 8px 17px;
+  background-color: transparent;
+}
+.chat-support p{
+  font-size: 13px;
+  padding-top: 8px;
+  margin-bottom: 5px;
+}
+.chat-support b{
+  font-size: 18px;
+}
+.chat-support ul{
+  margin-top: 25px !important;
+}
+.chat-support li{
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+}
+hr{
+  margin: 0px 15px;
+}
+.copy-right{
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+ 
+
