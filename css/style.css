@@ -92,16 +92,10 @@
   background-color: hsl(0, 0%, 0%, 0.5) !important;
 }
 .carousel-item{
-  height: 650px !important;
   background-color: black;
-  overflow: hidden;
 }
 .carousel-item img{
-  height: 100%;
-  width: auto;
-  position: relative;
-  left: -25%;
-  
+  width: 100%;
 }
 .carousel-indicators button{
   width: 8px !important;
@@ -109,8 +103,27 @@
   border-radius: 50%;
   margin: 0 10px !important;
 }
-
+.banner{
+  padding: 50px 0;
+}
 /* carousal ends */
+
+.common-prod{
+  width: calc(100% / 7);
+  padding: 25px;
+}
+
+
+/* common-products-ends */
+
+.comm-rec{
+  width: calc(100% / 3);
+  padding: 15px 35px;
+  text-align: center;
+}
+
+
+/* super-rec ends */
 
 .hover-up{
   position: relative;
@@ -134,8 +147,31 @@
 .first-big{
   width: 500px;
 }
+.card-text
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hot-phones-child:first-child {
+  width: calc(100% / 3);
+}
+.hot-phones-child:not(:first-child) {
+  width: calc(100% / 5);
+}
 
 /* hottest phones ends */
+
+.payments-warranty h5
+{
+  padding-top: 15px;
+  font-size: 15px;
+}
+.payments-warranty p
+{
+  font-size: 13px;
+}
 
 
 
@@ -194,5 +230,93 @@ hr{
   font-size: 12px;
   padding-bottom: 15px;
 }
- 
+.copy-right-policy{
+  float: right;
+}
 
+/* footer ends */
+
+
+
+@media (max-width: 370px){
+  .hot-phones-child:first-child {
+    width: calc(100%);
+  }
+  .hot-phones-child:not(:first-child) {
+    width: calc(100%);
+  }
+  .cont-extra-padd{
+    padding: 0 10px !important;
+  }
+  .common-prod{
+    width: calc(100% / 4);
+    padding: 0px;
+  }
+  .comm-rec{
+    width: calc(100%);
+    padding: 50px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 767px) {
+  .cont-extra-padd{
+    padding: 0 10px !important;
+  }
+  .copy-right{
+    text-align: center;
+  }
+  .copy-right-policy{
+    float: none;
+  }
+  span{
+    padding: 0 10px;
+  }
+  .hot-phones-child:first-child {
+    width: calc(100%);
+  }
+  .hot-phones-child:not(:first-child) {
+    width: calc(100% / 2);
+  }
+  .common-prod{
+    width: calc(100% / 7);
+    padding: 0px;
+  }
+  .comm-rec{
+    width: calc(100% / 3);
+    padding: 15px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .cont-extra-padd{
+    padding: 0 10px !important;
+  }
+  .hot-phones-child:first-child {
+    width: calc(100% / 2);
+  }
+  .hot-phones-child:not(:first-child) {
+    width: calc(100% / 4);
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .cont-extra-padd{
+    padding: 0 10px !important;
+  }
+  .hot-phones-child:first-child {
+    width: calc(100% / 2);
+  }
+  .hot-phones-child:not(:first-child) {
+    width: calc(100% / 5);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .chat-support li {
+    margin: 0px;
+  }
+  
+  .hot-phones-child:first-child {
+    width: calc(100% / 3);
+  }
+  .hot-phones-child:not(:first-child) {
+    width: calc(100% / 6);
+  }
+}
