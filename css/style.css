@@ -94,7 +94,8 @@
 
 
 #carouselExampleCaptions button:hover{
-  background-color: hsl(0, 0%, 0%, 0.5) !important;
+  background-color: hsl(0, 0%, 0%, 0.1) !important;
+
 }
 .carousel-item{
   background-color: black;
@@ -109,7 +110,7 @@
   margin: 0 10px !important;
 }
 .banner{
-  padding: 50px 0;
+  padding: 15px 0 50px 0;
 }
 /* carousal ends */
 
@@ -244,6 +245,16 @@ hr{
 
 
 @media (max-width: 370px){
+  .top-header{
+    display: none;
+  }
+  .logo img{
+    display: block;
+    margin: 0 auto;
+  }
+  .banner-nav{
+    display: none;
+  }
   .hot-phones-child:first-child {
     width: calc(100%);
   }
@@ -264,6 +275,16 @@ hr{
 }
 
 @media (min-width: 370px) and (max-width: 767px) {
+  .top-header{
+    display: none;
+  }
+  .logo img{
+    display: block;
+    margin: 0 auto;
+  }
+  .banner-nav{
+    display: none;
+  }
   .cont-extra-padd{
     padding: 0 10px !important;
   }
@@ -292,6 +313,7 @@ hr{
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
+  
   .cont-extra-padd{
     padding: 0 10px !important;
   }
